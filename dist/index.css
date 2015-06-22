@@ -26,7 +26,7 @@
 
 /* Justify per row */
 
-.Grid--left {
+.Grid.-left {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;

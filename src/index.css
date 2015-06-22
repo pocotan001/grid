@@ -1,0 +1,134 @@
+/**
+ * Grid
+ */
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* With gutter */
+
+.Grid.-gutter {
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.Grid.-gutter > .Grid__cell {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+/* Justify per row */
+
+.Grid--left {
+  justify-content: flex-start;
+}
+
+.Grid.-center {
+  justify-content: center;
+}
+
+.Grid.-right {
+  justify-content: flex-end;
+}
+
+/* Alignment per row */
+
+.Grid.-top {
+  align-items: flex-start;
+}
+
+.Grid.-middle {
+  align-items: center;
+}
+
+.Grid.-bottom {
+  align-items: flex-end;
+}
+
+/**
+ * Grid cell
+ */
+
+.Grid__cell {
+  flex: 1;
+  min-width: 1px; /* for multi-lines */
+}
+
+/* Intrinsic widths */
+
+.Grid__cell.-fit {
+  flex: none;
+}
+
+.Grid__cell.-full {
+  flex: 0 0 100%;
+}
+
+/* Proportional widths */
+
+.Grid__cell.\-1of12 {
+  flex: 0 0 calc(100% * 1 / 12);
+  width: calc(100% * 1 / 12); /* for multi-lines of IE */
+}
+
+.Grid__cell.\-2of12 {
+  flex: 0 0 calc(100% * 2 / 12);
+  width: calc(100% * 2 / 12);
+}
+
+.Grid__cell.\-3of12 {
+  flex: 0 0 calc(100% * 3 / 12);
+  width: calc(100% * 3 / 12);
+}
+
+.Grid__cell.\-4of12 {
+  flex: 0 0 calc(100% * 4 / 12);
+  width: calc(100% * 4 / 12);
+}
+
+.Grid__cell.\-5of12 {
+  flex: 0 0 calc(100% * 5 / 12);
+  width: calc(100% * 5 / 12);
+}
+
+.Grid__cell.\-6of12 {
+  flex: 0 0 calc(100% * 6 / 12);
+  width: calc(100% * 6 / 12);
+}
+
+.Grid__cell.\-7of12 {
+  flex: 0 0 calc(100% * 7 / 12);
+  width: calc(100% * 7 / 12);
+}
+
+.Grid__cell.\-8of12 {
+  flex: 0 0 calc(100% * 8 / 12);
+  width: calc(100% * 8 / 12);
+}
+
+.Grid__cell.\-9of12 {
+  flex: 0 0 calc(100% * 9 / 12);
+  width: calc(100% * 9 / 12);
+}
+
+.Grid__cell.\-10of12 {
+  flex: 0 0 calc(100% * 10 / 12);
+  width: calc(100% * 10 / 12);
+}
+
+.Grid__cell.\-11of12 {
+  flex: 0 0 calc(100% * 11 / 12);
+  width: calc(100% * 11 / 12);
+}
+
+/* Reorder */
+
+.Grid__cell.-first {
+  order: -1;
+}
+
+.Grid__cell.-last {
+  order: 1;
+}

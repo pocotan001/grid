@@ -1,0 +1,19 @@
+{
+  "name": "grid",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.css",
+  "scripts": {
+    "build": "cssnext src/index.css dist/index.css"
+  },
+  "keywords": [
+    "css",
+    "grid"
+  ],
+  "author": "pocotan001",
+  "license": "MIT",
+  "devDependencies": {
+    "cssnext": "^1.7.1"
+  }
+}

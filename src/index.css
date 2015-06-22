@@ -21,7 +21,7 @@
 
 /* Justify per row */
 
-.Grid--left {
+.Grid.-left {
   justify-content: flex-start;
 }
 

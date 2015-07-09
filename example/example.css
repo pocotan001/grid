@@ -1,0 +1,10 @@
+body {
+  padding: 50px;
+}
+
+.example-box {
+  text-align: center;
+  padding: 2em 0;
+  background: #ccc;
+  margin: 0;
+}

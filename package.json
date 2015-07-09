@@ -1,15 +1,18 @@
 {
-  "name": "grid",
-  "private": true,
+  "name": "super-grid",
   "version": "0.0.1",
   "description": "",
   "main": "dist/index.css",
   "scripts": {
-    "build": "cssnext src/index.css dist/index.css"
+    "build": "cssnext src/index.css dist/index.css",
+    "watch": "npm run build -- -w"
   },
   "keywords": [
+    "component",
     "css",
-    "grid"
+    "grid",
+    "minimal",
+    "style"
   ],
   "author": "pocotan001",
   "license": "MIT",

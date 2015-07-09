@@ -1,3 +1,7 @@
+:root {
+  --grid-gutter: 20px;
+}
+
 /**
  * Grid
  */
@@ -10,13 +14,13 @@
 /* With gutter */
 
 .Grid.-gutter {
-  margin-top: -20px;
-  margin-left: -20px;
+  margin-top: -var(--grid-gutter);
+  margin-left: -var(--grid-gutter);
 }
 
 .Grid.-gutter > .Grid__cell {
-  padding-top: 20px;
-  padding-left: 20px;
+  padding-top: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
 }
 
 /* Justify per row */
@@ -52,76 +56,65 @@
  */
 
 .Grid__cell {
-  flex: 1;
+  box-sizing: border-box;
   min-width: 1px; /* for multi-lines */
 }
 
-/* Intrinsic widths */
+/* Fill remaining width */
 
-.Grid__cell.-fit {
-  flex: none;
-}
-
-.Grid__cell.-full {
-  flex: none;
-  width: 100%;
+.Grid__cell.-fill {
+  flex: 1;
 }
 
 /* Proportional widths */
 
 .Grid__cell.\-1of12 {
-  flex: none;
   width: calc(100% * 1 / 12);
 }
 
 .Grid__cell.\-2of12 {
-  flex: none;
   width: calc(100% * 2 / 12);
 }
 
 .Grid__cell.\-3of12 {
-  flex: none;
   width: calc(100% * 3 / 12);
 }
 
 .Grid__cell.\-4of12 {
-  flex: none;
   width: calc(100% * 4 / 12);
 }
 
 .Grid__cell.\-5of12 {
-  flex: none;
   width: calc(100% * 5 / 12);
 }
 
 .Grid__cell.\-6of12 {
-  flex: none;
   width: calc(100% * 6 / 12);
 }
 
 .Grid__cell.\-7of12 {
-  flex: none;
   width: calc(100% * 7 / 12);
 }
 
 .Grid__cell.\-8of12 {
-  flex: none;
   width: calc(100% * 8 / 12);
 }
 
 .Grid__cell.\-9of12 {
-  flex: none;
   width: calc(100% * 9 / 12);
 }
 
 .Grid__cell.\-10of12 {
-  flex: none;
   width: calc(100% * 10 / 12);
 }
 
 .Grid__cell.\-11of12 {
-  flex: none;
   width: calc(100% * 11 / 12);
+}
+
+.Grid__cell.\-12of12,
+.Grid__cell.-full {
+  width: 100%;
 }
 
 /* Reorder */
